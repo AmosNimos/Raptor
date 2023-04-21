@@ -8,6 +8,7 @@ Raptor is a compiled programming language that draws inspiration from Bash scrip
     <p>One programming language to rule them all.</p>
     <h2>Overview</h2>
     <p>The Raptor Programming Language is designed to be simple and versatile, like Python, but with the power of Bash and the speed and optimization of C. It is built with memory management in mind, making it efficient and safe to use.</p>
+    <p>Please read the <strong>note</strong> file for more recent information on the project</p>
     <h2>Goals</h2>
     <ul>
       <li>Easy to use</li>
