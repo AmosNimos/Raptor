@@ -1,0 +1,2 @@
+Update 1: Project will prioritize retro compatibility with Bash and convert to C before generating machine code. Raptor language aims to increase productivity for large projects, but sacrifices some transparency. It is not intended to compete with other languages, but provide quick results and graphics in Bash programs through .rap file conversion and simple compilation command "./raptor project.rap output_file_name".
+
