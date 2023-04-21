@@ -1,6 +1,8 @@
 # Raptor
+
 Raptor is a compiled programming language that draws inspiration from Bash scripting, C, Lua, and Rust, offering memory safety and efficient execution.
 
+<img src="Logo_v1.png" alt="Flag" height="200">
   <body>
     <h1>Raptor Programming Language</h1>
     <p>One programming language to rule them all.</p>
