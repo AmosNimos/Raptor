@@ -1,0 +1,52 @@
+# file: example.rap
+# name: example 
+# author: amosnimos
+
+# example single line comment
+
+##
+This is an example 
+of a multi 
+line comment
+##
+
+# Importing the input library
+. input
+
+# Initializing variables
+$score = 0
+$player_x = 0
+$player_y = 0
+$gravity = 9.8
+$fill_color = "255 0 0"
+$outline_color = "0 0 0"
+$background_color = "255 255 255"
+$outline_thickness = 2
+
+increase_function {
+  $arg1=(($1++))
+  echo "$arg1"
+}
+
+start
+
+  for [true]
+    # Getting keyboard input
+    if [ "left" == read_keyboard ] 
+      $player_x=$(increase_function $player_x)
+    fi
+
+    # Getting mouse input
+    if [ "left-click" == read_mouse ] 
+      $score++
+    fi
+
+    background "$background_color"
+    
+    # Drawing the rectangle
+    color "$fill_color $outline_color $outline_thickness"
+    rect "$player_x $player_y 10 10"
+    
+  rof
+
+end
