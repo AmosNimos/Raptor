@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My C Wrapper Documentation</title>
+</head>
+<body>
+	<h1>My C Wrapper Documentation</h1>
+
+	<h2>What is the Wrapper?</h2>
+	<p>My C Wrapper is a library that provides additional functionality to Bash scripts, such as handling key input, mouse input, displaying windows, drawing shapes on the window, and displaying text. It is built using the C programming language and can be compiled with a basic C compiler.</p>
+
+	<h2>How to Include the Wrapper in Your Bash Scripts?</h2>
+	<p>To include the wrapper in your Bash script, you first need to compile the wrapper program into a shared library (e.g., my_c_wrapper_program.so). Then, you can use the LD_LIBRARY_PATH environment variable to specify the path to the shared library when running your Bash script, like this:</p>
+	<pre>LD_LIBRARY_PATH=/path/to/my_c_wrapper_program/ ./your_bash_script.sh</pre>
+
+	<h2>Wrapper Functionality</h2>
+	<p>The My C Wrapper library provides the following functions:</p>
+	<ul>
+		<li><strong>init_window</strong>: Initializes a window for drawing.</li>
+		<li><strong>close_window</strong>: Closes the window.</li>
+		<li><strong>get_key_input</strong>: Waits for a key press event and returns the key code.</li>
+		<li><strong>get_mouse_input</strong>: Waits for a mouse event and returns the mouse coordinates.</li>
+		<li><strong>display_window</strong>: Displays the window on the screen.</li>
+		<li><strong>draw_rectangle</strong>: Draws a rectangle on the window.</li>
+		<li><strong>draw_circle</strong>: Draws a circle on the window.</li>
+		<li><strong>draw_text</strong>: Draws text on the window.</li>
+	</ul>
+
+	<h2>How to Use the Wrapper Functions?</h2>
+	<p>To use the wrapper functions in your Bash script, you first need to include the shared library using the <code>source</code> command, like this:</p>
+	<pre>source /path/to/my_c_wrapper_program/my_c_wrapper_program.sh</pre>
+
+	<p>Then, you can use the wrapper functions in your script, like this:</p>
+	<pre>
+	# Initialize the window
+	init_window 640 480
+
+	# Draw a rectangle on the window
+	draw_rectangle 10 10 100 100 "#ff0000"
+
+	# Display the window on the screen
+	display_window
+
+	# Wait for a key press event and print the key code
+	key=$(get_key_input)
+	echo "Key pressed: $key"
+	</pre>
+
+	<h2>How to Compile Your Bash Script with the Wrapper?</h2>
+	<p>To compile your Bash script with the wrapper, you can use the <code>shc</code> command, like this:</p>
+	<pre>shc -r -f your_bash_script.sh -o your_bash_script</pre>
+
+	<p>This will compile your Bash script with the wrapper and create an executable file called <code>your_bash_script</code>.</p>
+
+</body>
+</html>
